@@ -1,0 +1,15 @@
+{
+  "id": "146e52f0-fd32-4814-8e58-8a3c0f4d5eb7",
+  "values": [
+    {
+      "key": "random_lib",
+      "value": "var random = (function () {\n    var self = {\n        alphanumeric: function (count) {\n            return Math.random().toString(36).substr(2, count)\n        },\n\n        numeric: function (count) {\n            return Math.random().toString().substr(2, count);\n        },\n\n        int: function (min, max) {\n            return Math.floor(Math.random() * (max-min+1) + min);\n        },\n\n        choose: function (list) {\n            return list[this.int(0, list.length)];\n        },\n    };\n\n    return self;\n})();\n",
+      "type": "text",
+      "enabled": true
+    }
+  ],
+  "name": "My Workspace Globals",
+  "_postman_variable_scope": "globals",
+  "_postman_exported_at": "2018-11-05T11:53:30.910Z",
+  "_postman_exported_using": "Postman/6.3.0"
+}
